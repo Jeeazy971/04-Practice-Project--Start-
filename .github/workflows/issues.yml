@@ -1,5 +1,5 @@
 name: Issue pipelines
-on: [push, workflow_dispatch]
+on: [issues, workflow_dispatch]
 jobs:
     issue_test:
         runs-on: ubuntu-latest
