@@ -1,0 +1,10 @@
+name: Issue pipelines
+on: [push, workflow_dispatch]
+jobs:
+    issue_test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output issues
+              run: echo "${{toJSON(inputs)}}"
+            - name: Output context github
+              run: echo "${{toJSON(github)}}"
